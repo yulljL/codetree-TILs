@@ -24,8 +24,9 @@ int main() {
             cnt++;
         }
     }
-    
+    double avg = (len_all) / n;
+
     cout << fixed << setprecision(2);
-    cout << cnt << " " <<(double)(len_all / n);
+    cout << cnt << " " << avg;
     return 0;
 }
