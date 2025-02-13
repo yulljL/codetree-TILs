@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <iomanip>
 using namespace std;
 
 int main() {
@@ -26,7 +25,9 @@ int main() {
     }
     double avg = (len_all) / n;
 
-    cout << fixed << setprecision(2);
+    cout << fixed;
+    cout.precision(2);
     cout << cnt << " " << avg;
+
     return 0;
 }
