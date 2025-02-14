@@ -12,8 +12,11 @@ int main() {
     int len = str.length();
     int cnt = 0;
 
-    for(int i = len-1; i >= len - n; i--) {
+    for(int i = len-1; i >= 0; i--) {
+        if(cnt >= n)
+            break;
         cout << str[i];
+        cnt++;
     }
 
     return 0;
