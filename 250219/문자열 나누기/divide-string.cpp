@@ -17,7 +17,7 @@ int main() {
 
     int len = str_all.length();
 
-    for(int i = 0; i <= len; i++){
+    for(int i = 0; i < len; i++){
         cout << str_all[i];
         if((i + 1) % 5 == 0)
             cout << endl;
