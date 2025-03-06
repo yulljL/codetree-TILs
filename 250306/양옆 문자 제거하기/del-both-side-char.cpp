@@ -8,8 +8,7 @@ int main() {
 	cin >> str;
 	int len = str.length();
 
-	str.erase(2, 1);
-	str.erase(len-3, 1);
+	str = str.substr(0,1) + str.substr(2,len-4) + str.substr(len-1, 1);
 	cout << str;
 
     return 0;
